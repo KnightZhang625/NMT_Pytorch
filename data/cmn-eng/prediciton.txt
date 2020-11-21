@@ -1,0 +1,420 @@
+SRC: ['is', 'it', 'ok', 'to', 'take', 'pictures', 'here', '<pad>', '<pad>', '<pad>']
+TGT: ['谚', 'e', 'e', 'e', '区', '区', '区', '区', '区', '区', '区', '区', '区', '区', '区', '区', '区', '区', '区']
+GOLDEN: ['这', '里', '允', '许', '拍', '照', '吗', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'couldnt', 'have', 'done', 'it', 'without', 'you', 'thank', 'you', '<pad>']
+TGT: ['e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e']
+GOLDEN: ['没', '有', '你', '我', '无', '法', '做', '到', '谢', '谢', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['they', 'are', 'watching', 'a', 'movie', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['評', '評', '評', '評', '輕', '輕', '輕', '輕', '輕', '輕', '輕', '輕', '務', '務', '務', '務', '務', '務', '務']
+GOLDEN: ['他', '們', '在', '看', '一', '部', '電', '影', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['whos', 'next', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['下', '一', '个', '是', '谁', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['what', 'you', 'said', 'about', 'tom', 'isnt', 'true', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '说', '的', '关', '于', '汤', '姆', '的', '话', '不', '是', '真', '的', '<eos>', '<pad>']
+
+SRC: ['he', 'gave', 'me', 'a', 'lecture', 'on', 'drinking', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['他', '因', '我', '喝', '酒', '而', '訓', '斥', '我', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['do', 'you', 'have', 'any', 'brothers', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '有', '兄', '弟', '吗', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['how', 'did', 'you', 'arrive', 'at', 'this', 'conclusion', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '们', '怎', '么', '得', '出', '这', '个', '结', '论', '的', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['blenders', 'are', 'nice', 'for', 'people', 'who', 'really', 'like', 'smoothies']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['攪', '拌', '機', '對', '真', '的', '喜', '歡', '冰', '沙', '的', '人', '來', '說', '很', '不', '錯', '<eos>']
+
+SRC: ['tom', 'is', 'the', 'tallest', 'man', 'i', 'know', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有']
+GOLDEN: ['湯', '姆', '是', '我', '所', '知', '道', '的', '最', '高', '的', '人', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['answer', 'the', 'telephone', 'will', 'you', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有']
+GOLDEN: ['請', '你', '接', '聽', '一', '下', '電', '話', '好', '嗎', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['the', 'company', 'spends', 'a', 'lot', 'of', 'money', 'on', 'advertising', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有', '有']
+GOLDEN: ['那', '家', '公', '司', '在', '广', '告', '上', '花', '了', '很', '多', '钱', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['summers', 'are', 'very', 'hot', 'in', 'kyoto', '<pad>', '<pad>']
+TGT: ['他', '的', '的', '的', '的', '的', '的', '的', '的', '的', '的']
+GOLDEN: ['京', '都', '的', '夏', '天', '很', '热', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['you', 'dont', 'look', 'so', 'well', '<pad>', '<pad>', '<pad>']
+TGT: ['他', '的', '的', '的', '的', '的', '的', '的', '的', '的', '的']
+GOLDEN: ['你', '看', '上', '去', '不', '太', '好', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'can', 'only', 'speak', 'for', 'myself', '<pad>', '<pad>']
+TGT: ['他', '的', '的', '的', '的', '的', '的', '的', '的', '的', '的']
+GOLDEN: ['我', '只', '能', '代', '表', '我', '自', '己', '講', '話', '<eos>']
+
+SRC: ['he', 'has', 'a', 'good', 'appetite', '<pad>', '<pad>']
+TGT: ['他', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不']
+GOLDEN: ['他', '的', '胃', '口', '很', '好', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['how', 'much', 'does', 'it', 'cost', '<pad>', '<pad>']
+TGT: ['他', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不']
+GOLDEN: ['多', '少', '錢', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['its', 'very', 'uncomfortable', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['他', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不', '不']
+GOLDEN: ['它', '真', '是', '不', '舒', '服', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['can', 'you', 'give', 'me', 'your', 'phone', 'number', '<pad>']
+TGT: ['我', '我', '不', '不', '不', '不', '不', '不', '不', '不', '不', '很']
+GOLDEN: ['你', '能', '給', '我', '你', '的', '電', '話', '號', '碼', '嗎', '<eos>']
+
+SRC: ['are', 'there', 'any', 'messages', 'for', 'me', '<pad>', '<pad>']
+TGT: ['我', '我', '不', '不', '不', '不', '不', '不', '不', '不', '不', '很']
+GOLDEN: ['有', '任', '何', '給', '我', '的', '訊', '息', '嗎', '<eos>', '<pad>', '<pad>']
+
+SRC: ['the', 'lake', 'is', 'deepest', 'at', 'this', 'spot', '<pad>']
+TGT: ['我', '我', '不', '不', '不', '不', '不', '不', '不', '不', '不', '很']
+GOLDEN: ['这', '里', '是', '湖', '最', '深', '的', '地', '方', '<eos>', '<pad>', '<pad>']
+
+SRC: ['the', 'sea', 'is', 'blue', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['大', '海', '是', '蓝', '色', '的', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['tom', 'is', 'on', 'his', 'way', 'here', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['湯', '姆', '正', '在', '來', '這', '里', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'telephoned', 'her', 'at', 'once', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['我', '立', '刻', '打', '電', '話', '給', '她', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['to', 'put', 'it', 'briefly', 'i', 'do', 'not', 'agree', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['简', '而', '言', '之', '我', '不', '同', '意', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['always', 'be', 'true', 'to', 'yourself', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['永', '遠', '要', '對', '自', '己', '誠', '實', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['whos', 'dying', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['誰', '要', '死', '了', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'wish', 'tom', 'would', 'just', 'go', 'away', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['我', '希', '望', '汤', '姆', '走', '开', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['its', 'very', 'big', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['它', '很', '大', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['id', 'like', 'to', 'stay', 'for', 'one', 'night', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['我', '想', '待', '一', '夜', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['if', 'you', 'need', 'a', 'pen', 'ill', 'lend', 'you', 'one']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['如', '果', '你', '需', '要', '笔', '的', '话', '我', '借', '你', '一', '支', '<eos>']
+
+SRC: ['he', 'has', 'written', 'a', 'letter', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['他', '写', '了', '一', '封', '信', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'am', 'not', 'a', 'teacher', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['我', '不', '是', '個', '老', '師', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['hi', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['嗨', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['a', 'good', 'idea', 'came', 'to', 'him']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['他', '想', '到', '一', '个', '好', '主', '意', '<eos>', '<pad>', '<pad>']
+
+SRC: ['i', 'dove', 'into', 'the', 'river', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['我', '跳', '进', '了', '河', '里', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['he', 'is', 'no', 'fool', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['他', '不', '是', '傻', '子', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['they', 'married', 'when', 'they', 'were', 'young', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['他', '們', '在', '還', '很', '年', '輕', '的', '時', '候', '就', '結', '婚', '了', '<eos>', '<pad>', '<pad>']
+
+SRC: ['i', 'was', 'impressed', 'with', 'her', 'work', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我', '我']
+GOLDEN: ['她', '的', '作', '品', '給', '我', '留', '下', '了', '深', '刻', '印', '象', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'have', 'nothing', 'to', 'do', 'with', 'that', 'crime', '<pad>']
+TGT: ['我', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了']
+GOLDEN: ['这', '个', '犯', '罪', '和', '我', '一', '点', '关', '系', '都', '没', '有', '<eos>']
+
+SRC: ['i', 'want', 'to', 'drink', 'something', 'cold', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了']
+GOLDEN: ['我', '想', '喝', '點', '冷', '飲', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['they', 'go', 'to', 'church', 'on', 'sunday', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了']
+GOLDEN: ['他', '們', '禮', '拜', '天', '上', '教', '堂', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['he', 'became', 'a', 'famous', 'singer', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了']
+GOLDEN: ['他', '成', '为', '了', '著', '名', '的', '歌', '手', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['who', 'are', 'your', 'most', 'interesting', 'friends', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了']
+GOLDEN: ['你', '最', '有', '趣', '的', '朋', '友', '是', '誰', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['he', 'was', 'elected', 'president', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了', '了']
+GOLDEN: ['他', '被', '选', '为', '总', '统', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['he', 'stuck', 'his', 'pencil', 'behind', 'his', 'ear', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['他', '把', '他', '的', '鉛', '筆', '放', '在', '他', '的', '耳', '朵', '後', '面', '<eos>', '<pad>']
+
+SRC: ['im', 'fine', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '很', '好', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'cant', 'meet', 'you', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['遇', '不', '到', '你', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['tom', 'admitted', 'that', 'he', 'had', 'killed', 'mary', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['汤', '姆', '承', '认', '他', '杀', '死', '了', '玛', '丽', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['it', 'seems', 'she', 'hates', 'you', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['她', '好', '像', '很', '讨', '厌', '你', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['tom', 'wants', 'children', 'but', 'mary', 'doesnt', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['汤', '姆', '想', '要', '孩', '子', '但', '玛', '丽', '不', '想', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['place', 'it', 'wherever', 'you', 'like', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '想', '放', '在', '哪', '裡', '就', '放', '在', '哪', '裡', '<eos>', '<pad>', '<pad>']
+
+SRC: ['he', 'likes', 'sleeping', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['他', '喜', '欢', '睡', '觉', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'have', 'been', 'reading', 'the', 'book', 'all', 'afternoon']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '整', '个', '下', '午', '都', '在', '读', '这', '本', '书', '<eos>', '<pad>', '<pad>']
+
+SRC: ['there', 'is', 'no', 'doubt', 'about', 'it', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['關', '於', '此', '事', '毫', '無', '疑', '問', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['dont', 'do', 'anything', 'like', 'that', 'again', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['不', '要', '再', '做', '那', '樣', '的', '事', '情', '了', '<eos>', '<pad>', '<pad>']
+
+SRC: ['i', 'dont', 'know', 'anything', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '什', '么', '都', '不', '知', '道', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['one', 'must', 'be', 'responsible', 'for', 'ones', 'conduct']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['人', '要', '为', '自', '己', '的', '行', '为', '负', '责', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'was', 'awfully', 'confused', 'by', 'his', 'question']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '對', '他', '的', '問', '題', '感', '到', '非', '常', '困', '惑', '<eos>', '<pad>']
+
+SRC: ['youd', 'better', 'not', 'go', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '最', '好', '不', '要', '去', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['did', 'you', 'phone', 'tom', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['给', '汤', '姆', '打', '过', '电', '话', '了', '吗', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['its', 'hot', 'out', 'here', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['这', '里', '够', '热', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['tom', 'doesnt', 'want', 'to', 'lose', 'mary', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['汤', '姆', '不', '想', '失', '去', '玛', '丽', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['do', 'you', 'think', 'i', 'can', 'help', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '认', '为', '我', '能', '帮', '忙', '吗', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['control', 'is', 'everything', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['控', '制', '就', '是', '一', '切', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['the', 'flood', 'caused', 'a', 'lot', 'of', 'damage', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['洪', '水', '造', '成', '了', '很', '大', '的', '損', '害', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['how', 'do', 'you', 'heat', 'the', 'house', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['您', '怎', '么', '让', '屋', '子', '暖', '起', '来', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'would', 'rather', 'stay', 'at', 'home', 'than', 'go', 'out', 'in', 'this', 'hot', 'weather']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['在', '这', '种', '暑', '天', '里', '我', '宁', '愿', '呆', '在', '家', '也', '不', '出', '去', '<eos>']
+
+SRC: ['im', 'getting', 'more', 'and', 'more', 'gray', 'hair', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '的', '白', '髮', '越', '來', '越', '多', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['which', 'season', 'do', 'you', 'like', 'the', 'best', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['您', '最', '喜', '欢', '哪', '个', '季', '节', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['im', 'afraid', 'that', 'i', 'differ', 'with', 'you', 'on', 'this', 'point']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['恐', '怕', '就', '这', '点', '上', '我', '和', '你', '持', '不', '同', '意', '见', '<eos>']
+
+SRC: ['the', 'magician', 'had', 'the', 'childrens', 'attention', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['魔', '术', '师', '吸', '引', '了', '孩', '子', '们', '的', '注', '意', '<eos>', '<pad>', '<pad>']
+
+SRC: ['im', 'not', 'jealous', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '不', '嫉', '妒', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'wanted', 'red', 'shoes', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '要', '紅', '色', '的', '鞋', '子', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['an', 'apple', 'sits', 'on', 'the', 'table', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['桌', '上', '有', '个', '苹', '果', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['mary', 'wants', 'to', 'become', 'a', 'teacher', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['瑪', '麗', '想', '成', '為', '一', '名', '教', '師', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['tom', 'doesnt', 'look', 'like', 'his', 'father', 'at', 'all', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['汤', '姆', '和', '他', '的', '父', '亲', '长', '得', '一', '点', '也', '不', '像', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['youve', 'got', 'to', 'set', 'the', 'alarm', 'clock', 'before', 'you', 'go', 'to', 'bed']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['在', '你', '上', '床', '睡', '覺', '之', '前', '你', '必', '須', '把', '鬧', '鐘', '設', '定', '好', '<eos>']
+
+SRC: ['you', 'remember', 'it', 'better', 'than', 'i', 'do', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '比', '我', '记', '得', '好', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'got', 'up', 'early', 'enough', 'to', 'catch', 'the', 'first', 'train']
+TGT: ['我', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '起', '了', '个', '大', '早', '为', '了', '赶', '第', '一', '班', '火', '车', '<eos>']
+
+SRC: ['they', 'guarantee', 'this', 'clock', 'for', 'a', 'year', '<pad>', '<pad>', '<pad>']
+TGT: ['我', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['他', '們', '保', '證', '這', '個', '時', '鐘', '可', '用', '一', '年', '<eos>', '<pad>', '<pad>']
+
+SRC: ['this', 'bomb', 'can', 'kill', 'a', 'lot', 'of', 'people']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['这', '个', '炸', '弹', '可', '以', '炸', '死', '很', '多', '人', '<eos>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['do', 'you', 'know', 'how', 'the', 'accident', 'happened', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '知', '道', '這', '個', '意', '外', '是', '如', '何', '發', '生', '的', '嗎', '<eos>']
+
+SRC: ['look', 'at', 'that', 'tall', 'building', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['看', '那', '棟', '高', '樓', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'cant', 'stand', 'this', 'noise', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '不', '能', '忍', '受', '這', '個', '噪', '音', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['that', 'architect', 'builds', 'very', 'modern', 'houses', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['那', '个', '建', '筑', '师', '创', '建', '了', '非', '常', '现', '代', '的', '房', '屋', '<eos>']
+
+SRC: ['its', 'six', 'oclock', 'already', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['已', '經', '六', '點', '鐘', '了', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['ill', 'get', 'there', 'as', 'soon', 'as', 'i', 'can', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '会', '尽', '可', '能', '早', '地', '到', '那', '儿', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['your', 'brother', 'got', 'married', 'didnt', 'he', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '哥', '哥', '結', '婚', '了', '不', '是', '嗎', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['the', 'pen', 'is', 'on', 'the', 'desk', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['笔', '在', '桌', '上', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['how', 'do', 'you', 'say', 'this', 'word', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '们', '怎', '么', '读', '这', '个', '词', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['he', 'suspects', 'me', 'of', 'telling', 'a', 'lie', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['他', '懷', '疑', '我', '說', '謊', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['now', 'it', 'is', 'official', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['现', '在', '它', '是', '官', '方', '的', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'wont', 'be', 'home', 'next', 'sunday', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '下', '周', '日', '不', '在', '家', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['could', 'you', 'put', 'this', 'report', 'into', 'italian', 'for', 'me']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '可', '以', '為', '我', '把', '這', '份', '報', '告', '翻', '譯', '成', '意', '大', '利', '文', '嗎', '<eos>']
+
+SRC: ['please', 'tell', 'the', 'truth', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['请', '把', '真', '实', '的', '情', '况', '说', '出', '来', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['tom', 'is', 'afraid', 'of', 'heights', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['汤', '姆', '恐', '高', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['it', 'is', 'our', 'obligation', 'to', 'help', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['幫', '助', '是', '我', '們', '的', '義', '務', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['i', 'saw', 'him', 'after', 'ten', 'years', '<pad>', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['十', '年', '之', '後', '我', '看', '到', '了', '他', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['you', 'dont', 'need', 'to', 'call', 'me', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['你', '不', '必', '打', '电', '话', '给', '我', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['would', 'you', 'lend', 'me', 'a', 'pencil', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['能', '借', '我', '支', '铅', '笔', '吗', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['im', 'buying', 'a', 'new', 'car', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['我', '在', '买', '一', '辆', '新', '车', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['study', 'hard', 'so', 'you', 'dont', 'fail', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['努', '力', '學', '習', '這', '樣', '你', '就', '不', '會', '失', '敗', '<eos>']
+
+SRC: ['the', 'mouse', 'ran', 'into', 'the', 'hole', '<pad>', '<pad>', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['這', '隻', '老', '鼠', '跑', '進', '洞', '裡', '<eos>', '<pad>', '<pad>', '<pad>', '<pad>']
+
+SRC: ['there', 'is', 'not', 'much', 'traffic', 'on', 'this', 'road', '<pad>']
+TGT: ['<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>', '<eos>']
+GOLDEN: ['这', '条', '路', '上', '的', '车', '辆', '不', '多', '<eos>', '<pad>', '<pad>', '<pad>']
+

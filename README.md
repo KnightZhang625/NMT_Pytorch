@@ -1,2 +1,2 @@
 # NMT_Pytorch
-Encoder Decoder with Attention, Batch Training
+Provide batch training method for Encoder Decoder with Attention
