@@ -234,6 +234,69 @@ class Decoder(nn.Module):
   def initHidden(self, batch_size):
     return torch.zeros(self.num_layers*2, batch_size, self.hidden_size)
 
+def makeAttentionMask(src_seq_length):
+  max_length = torch.max(src_seq_length)
+  attention_mask = torch.arange(max_length)[None, :] < src_seq_length[:, None]
+  attention_mask = attention_mask.float()[:, None, :]
+  attention_mask = (attention_mask - 1) * 10000
+  return attention_mask
+
+def train(datas, optimizers, is_predict=False, predict_path='prediciton.txt', sample_k=3):
+  src_input_data = datas['src_input_data']
+  src_seq_length = datas['src_seq_length']
+  tgt_input_data = datas['tgt_input_data']
+  tgt_output_data = datas['tgt_output_data']
+  tgt_seq_length = datas['tgt_seq_length']
+  batch_size = datas['actual_bs']
+  
+  src_sentences = [data_process.convertToStr(line, data_process.eng_idx_vocab) for line in src_input_data]
+  tgt_sentences = [data_process.convertToStr(line, data_process.chs_idx_vocab) for line in tgt_output_data]
+  
+  encoder_optimizer = optimizers['encoder']
+  decoder_optimizer = optimizers['decoder']
+  encoder_optimizer.zero_grad()
+  decoder_optimizer.zero_grad()
+
+  # Encoder
+  encoder_hidden = encoder.initHidden(batch_size)
+  encoder_outputs = encoder(src_input_data, src_seq_length, encoder_hidden)
+
+  # Decoder
+  attention_mask = makeAttentionMask(src_seq_length)
+  decoder_hidden = decoder.initHidden(batch_size)
+  seq_length = tgt_input_data.size()[1]
+  tgt_loss_mask = torch.arange(torch.max(tgt_seq_length))[None, :] < tgt_seq_length[:, None]
+  tgt_loss_mask = tgt_loss_mask.float()
+
+  loss = 0
+  predictions = []
+  for t in range(seq_length):
+    # (b, 1)
+    input_t = tgt_input_data[:, t][:, None]
+    golden_t = tgt_output_data[:, t]
+    mask_t = tgt_loss_mask[:, t]
+
+    output, decoder_hidden = decoder(input_t, decoder_hidden, encoder_outputs, attention_mask)
+    topv, topi = output.topk(1)
+    predictions.append(topi)
+    loss += torch.sum(criterion(output, golden_t) * mask_t)
+  
+  predictions = [data_process.convertToStr(line, data_process.chs_idx_vocab) for line in torch.cat(predictions, dim=1)]
+
+  loss.backward()
+  encoder_optimizer.step()
+  decoder_optimizer.step()
+
+  if is_predict:
+    random_idx = random.sample(range(batch_size), k=sample_k)
+    with codecs.open(predict_path, 'a', 'utf-8') as file:
+      for idx in random_idx:
+        to_write = 'SRC: {}\nTGT: {}\nGOLDEN: {}\n\n'.format(src_sentences[idx], predictions[idx], tgt_sentences[idx])
+        file.write(to_write)
+        file.flush()
+  
+  return (loss / torch.sum(tgt_loss_mask)).item()
+
 if __name__ == '__main__':
   data_process = DataProcess('data/cmn-eng/cmn.txt')
   encoder = Encoder(input_size=6707, hidden_size=320)
@@ -242,68 +305,18 @@ if __name__ == '__main__':
   decoder_optimizer = optim.Adam(decoder.parameters(), lr=5e-3)
   criterion = nn.NLLLoss(reduction='none')
 
-  train_steps = 50
-  step = 1
+  train_steps = 1
   all_losses = []
-  for step in tqdm(range(train_steps)):
-    for data_batch in data_process.dataBatch(10):
-      src_input_data = data_batch['src_input_data']
-      src_seq_length = data_batch['src_seq_length']
-      tgt_input_data = data_batch['tgt_input_data']
-      tgt_output_data = data_batch['tgt_output_data']
-      tgt_seq_length = data_batch['tgt_seq_length']
-      batch_size = data_batch['actual_bs']
+  act_step = 1
+  for _ in tqdm(range(train_steps)):
+    for datas in data_process.dataBatch(100):
+      loss = train(datas, {'encoder': encoder_optimizer, 'decoder': decoder_optimizer},
+                   True, 'data/prediction.txt')
+      all_losses.append(loss)
 
-      src_sentences = [data_process.convertToStr(line, data_process.eng_idx_vocab) for line in src_input_data]
-      tgt_sentences = [data_process.convertToStr(line, data_process.chs_idx_vocab) for line in tgt_output_data]
+      print('Step: {}\t Loss: {:2f}'.format(act_step, loss))
+      act_step +=1
 
-      encoder_optimizer.zero_grad()
-      decoder_optimizer.zero_grad()
-
-      # Encoder
-      encoder_hidden = encoder.initHidden(batch_size)
-      encoder_outputs = encoder(src_input_data, src_seq_length, encoder_hidden)
-
-      # attention mask
-      max_length = torch.max(src_seq_length)
-      attention_mask = torch.arange(max_length)[None, :] < src_seq_length[:, None]
-      attention_mask = attention_mask.float()[:, None, :]
-      attention_mask = (attention_mask - 1) * 10000
-
-      # Decoder
-      decoder_hidden = decoder.initHidden(batch_size)
-      seq_length = tgt_input_data.size()[1]
-      tgt_loss_mask = torch.arange(torch.max(tgt_seq_length))[None, :] < tgt_seq_length[:, None]
-      tgt_loss_mask = tgt_loss_mask.float()
-      
-      loss = 0
-      predictions = []
-      for t in range(seq_length):
-        # (b, 1)
-        input_t = tgt_input_data[:, t][:, None]
-        golden_t = tgt_output_data[:, t]
-        mask_t = tgt_loss_mask[:, t]
-
-        output, decoder_hidden = decoder(input_t, decoder_hidden, encoder_outputs, attention_mask)
-        topv, topi = output.topk(1)
-        predictions.append(topi)
-        loss += torch.sum(criterion(output, golden_t) * mask_t)
-    
-      predictions = [data_process.convertToStr(line, data_process.chs_idx_vocab) for line in torch.cat(predictions, dim=1)]
-
-      loss.backward()
-      encoder_optimizer.step()
-      decoder_optimizer.step()
-      all_losses.append((loss / torch.sum(tgt_loss_mask).item()))
-      print('Step: {}\t Loss: {:2f}'.format(step, loss / torch.sum(tgt_loss_mask)))
-      
-      predicted_idx = random.sample(range(batch_size), k=3)
-      with codecs.open('data/cmn-eng/prediciton.txt', 'a', 'utf-8') as file:
-        for idx in predicted_idx:
-          to_write = 'SRC: {}\nTGT: {}\nGOLDEN: {}\n\n'.format(src_sentences[idx], predictions[idx], tgt_sentences[idx])
-          file.write(to_write)
-          file.flush()
-  
   print('Finish Training!')
   torch.save(encoder.state_dict(), 'models/encoder.pth')
   torch.save(decoder.state_dict(), 'models/decoder.pth')
@@ -311,6 +324,69 @@ if __name__ == '__main__':
   plt.figure()
   plt.plot(all_losses)
   plt.show()
+
+  # step = 1
+  # all_losses = []
+  # for step in tqdm(range(train_steps)):
+  #   for data_batch in data_process.dataBatch(10):
+  #     src_input_data = data_batch['src_input_data']
+  #     src_seq_length = data_batch['src_seq_length']
+  #     tgt_input_data = data_batch['tgt_input_data']
+  #     tgt_output_data = data_batch['tgt_output_data']
+  #     tgt_seq_length = data_batch['tgt_seq_length']
+  #     batch_size = data_batch['actual_bs']
+
+  #     src_sentences = [data_process.convertToStr(line, data_process.eng_idx_vocab) for line in src_input_data]
+  #     tgt_sentences = [data_process.convertToStr(line, data_process.chs_idx_vocab) for line in tgt_output_data]
+
+  #     encoder_optimizer.zero_grad()
+  #     decoder_optimizer.zero_grad()
+
+  #     # Encoder
+  #     encoder_hidden = encoder.initHidden(batch_size)
+  #     encoder_outputs = encoder(src_input_data, src_seq_length, encoder_hidden)
+
+  #     # attention mask
+  #     max_length = torch.max(src_seq_length)
+  #     attention_mask = torch.arange(max_length)[None, :] < src_seq_length[:, None]
+  #     attention_mask = attention_mask.float()[:, None, :]
+  #     attention_mask = (attention_mask - 1) * 10000
+
+  #     # Decoder
+  #     decoder_hidden = decoder.initHidden(batch_size)
+  #     seq_length = tgt_input_data.size()[1]
+  #     tgt_loss_mask = torch.arange(torch.max(tgt_seq_length))[None, :] < tgt_seq_length[:, None]
+  #     tgt_loss_mask = tgt_loss_mask.float()
+      
+  #     loss = 0
+  #     predictions = []
+  #     for t in range(seq_length):
+  #       # (b, 1)
+  #       input_t = tgt_input_data[:, t][:, None]
+  #       golden_t = tgt_output_data[:, t]
+  #       mask_t = tgt_loss_mask[:, t]
+
+  #       output, decoder_hidden = decoder(input_t, decoder_hidden, encoder_outputs, attention_mask)
+  #       topv, topi = output.topk(1)
+  #       predictions.append(topi)
+  #       loss += torch.sum(criterion(output, golden_t) * mask_t)
+    
+  #     predictions = [data_process.convertToStr(line, data_process.chs_idx_vocab) for line in torch.cat(predictions, dim=1)]
+
+  #     loss.backward()
+  #     encoder_optimizer.step()
+  #     decoder_optimizer.step()
+  #     all_losses.append((loss / torch.sum(tgt_loss_mask).item()))
+  #     print('Step: {}\t Loss: {:2f}'.format(step, loss / torch.sum(tgt_loss_mask)))
+      
+  #     predicted_idx = random.sample(range(batch_size), k=3)
+  #     with codecs.open('data/cmn-eng/prediciton.txt', 'a', 'utf-8') as file:
+  #       for idx in predicted_idx:
+  #         to_write = 'SRC: {}\nTGT: {}\nGOLDEN: {}\n\n'.format(src_sentences[idx], predictions[idx], tgt_sentences[idx])
+  #         file.write(to_write)
+  #         file.flush()
+  
+
 
   # test_sentence = 'hug tom'
   # input_data = data_process._convertToIdx(data_process._cleanLine(test_sentence), vocab_idx=data_process.eng_vocab_idx, split_tag=' ')
